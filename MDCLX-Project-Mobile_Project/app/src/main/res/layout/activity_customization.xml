@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="bikeproject.uni.bikeapp.CreateAccountActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/title"
+                  android:text="@string/app_name"
+                  android:layout_marginStart="12dp"
+                  android:layout_marginTop="8dp"
+                  android:textColor="@color/black"
+                  android:fontFamily="sans-serif-black"
+                  android:textSize="42sp"/>
+
+        <!-- Bike Color picker -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/bike_color"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="8dp"
+                          android:layout_marginEnd="8dp"
+                          android:textColor="#000000"
+                          android:fontFamily="sans-serif-black"
+                          android:textSize="16sp"/>
+
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentRight="true">
+                    <ImageButton android:layout_width="64dp"
+                                 android:layout_height="24dp"
+                                 android:id="@+id/bikeColorButton"
+                                 android:layout_marginStart="8dp"
+                                 android:layout_marginTop="8dp"
+                                 android:layout_marginBottom="8dp"
+                                 android:layout_marginEnd="8dp"
+                                 android:paddingBottom="0dp"
+                                 android:paddingTop="0dp"
+                                 android:layout_alignParentEnd="true"
+                                 android:backgroundTint="#adad"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Spoke Color picker -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/spoke_color"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="8dp"
+                          android:layout_marginEnd="8dp"
+                          android:textColor="#000000"
+                          android:fontFamily="sans-serif-black"
+                          android:textSize="16sp"/>
+
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentRight="true">
+                    <ImageButton android:layout_width="64dp"
+                                 android:layout_height="24dp"
+                                 android:id="@+id/spokeColorButton"
+                                 android:layout_marginStart="8dp"
+                                 android:layout_marginTop="8dp"
+                                 android:layout_marginBottom="8dp"
+                                 android:layout_marginEnd="8dp"
+                                 android:layout_alignParentEnd="true"
+                                 android:backgroundTint="#adad"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Misc Color picker -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/misc_color"
+                          android:layout_marginStart="8dp"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="8dp"
+                          android:layout_marginEnd="8dp"
+                          android:textColor="#000000"
+                          android:fontFamily="sans-serif-black"
+                          android:textSize="16sp"/>
+
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentRight="true">
+                    <ImageButton android:layout_width="64dp"
+                                 android:layout_height="24dp"
+                                 android:id="@+id/miscColorButton"
+                                 android:layout_marginStart="8dp"
+                                 android:layout_marginTop="8dp"
+                                 android:layout_marginBottom="8dp"
+                                 android:layout_marginEnd="8dp"
+                                 android:layout_alignParentEnd="true"
+                                 android:backgroundTint="#adad"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bike selector -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:fontFamily="sans-serif-medium"
+                          android:textSize="20sp"
+                          android:textColor="@color/black"
+                          android:text="@string/select_bike_model"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="8dp"
+                          android:layout_marginRight="8dp"
+                          android:layout_marginLeft="8dp"/>
+
+                <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical">
+
+                        <!-- Bike 1 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/bikeModel1Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/bike_1"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/bikeModel1SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Bike 2 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/bikeModel2Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/bike_2"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/bikeModel2SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Bike 3 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/bikeModel3Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/bike_3"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/bikeModel3SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="sans-serif-medium"
+                              android:textSize="16sp"
+                              android:layout_marginTop="8dp"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginRight="8dp"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="@color/black"
+                              android:text="@string/currently_selected_bike"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/currentlySelectedBikeTextView"
+                              android:fontFamily="sans-serif-black"
+                              android:textSize="16sp"
+                              android:layout_marginTop="8dp"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginRight="8dp"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="@color/selected"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Misc selector -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:fontFamily="sans-serif-medium"
+                          android:textSize="20sp"
+                          android:textColor="@color/black"
+                          android:text="@string/select_misc_model"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="8dp"
+                          android:layout_marginRight="8dp"
+                          android:layout_marginLeft="8dp"/>
+
+                <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp">
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:orientation="vertical">
+
+                        <!-- Bike 1 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/misc1Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/misc_1"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/misc1SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Bike 2 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/misc2Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/misc_2"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/misc2SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- Bike 3 -->
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginBottom="8dp"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/misc3Layout"
+                                      android:clickable="true"
+                                      android:focusable="true"
+                        >
+
+                            <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bike"/>
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="vertical">
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-medium"
+                                          android:textSize="16sp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/black"
+                                          android:text="@string/misc_3"/>
+
+                                <TextView android:layout_width="wrap_content"
+                                          android:layout_height="wrap_content"
+                                          android:fontFamily="sans-serif-black"
+                                          android:textSize="16sp"
+                                          android:gravity="bottom"
+                                          android:layout_marginTop="8dp"
+                                          android:layout_marginRight="8dp"
+                                          android:layout_marginLeft="8dp"
+                                          android:textColor="@color/selected"
+                                          android:visibility="invisible"
+                                          android:id="@+id/misc3SelectedTextView"
+                                          android:text="@string/selected"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:fontFamily="sans-serif-medium"
+                              android:textSize="16sp"
+                              android:layout_marginTop="8dp"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginRight="8dp"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="@color/black"
+                              android:text="@string/currently_selected_misc"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/currentlySelectedMiscTextView"
+                              android:fontFamily="sans-serif-black"
+                              android:textSize="16sp"
+                              android:layout_marginTop="8dp"
+                              android:layout_marginBottom="8dp"
+                              android:layout_marginRight="8dp"
+                              android:layout_marginLeft="8dp"
+                              android:textColor="@color/selected"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Misc position -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+            <Switch android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/misc_position_switch"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/misc_position"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="20sp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           card_view:cardElevation="5dp"
+                                           android:layout_marginLeft="16dp"
+                                           android:layout_marginRight="16dp"
+                                           android:layout_marginTop="8dp"
+                                           android:layout_marginBottom="8dp">
+
+            <Button
+                    android:id="@+id/registerButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/rent_a_bike"
+                    android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MDCLX</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="username">Username</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_email">This email is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="customize">Customize Bike</string>
+    <string name="view_leaderboard">View LeaderBoard</string>
+    <string name="connect_to_vr">Connect to VR</string>
+    <string name="vr_connected">VR Device Connected</string>
+    <string name="bike_color">Bike color</string>
+    <string name="spoke_color">Spoke color</string>
+    <string name="misc_color">Misc color</string>
+    <string name="select_bike_model">Select Bike model</string>
+    <string name="select_misc_model">Select Misc model</string>
+    <string name="selected">SELECTED</string>
+
+    <string name="bike_1">Bike 1</string>
+    <string name="bike_2">Bike 2</string>
+    <string name="bike_3">Bike 3</string>
+    <string name="currently_selected_bike">Currently selected bike:</string>
+
+    <string name="misc_1">Misc 1</string>
+    <string name="misc_2">Misc 2</string>
+    <string name="misc_3">Misc 3</string>
+    <string name="currently_selected_misc">Currently selected misc:</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="misc_position">Misc in front</string>
+    <string name="manager">Manager information</string>
+    <string name="rent_a_bike">Rent a bike</string>
+    <string name="connect_to_website">Connect to website</string>
+</resources>
